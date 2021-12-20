@@ -1,9 +1,69 @@
 <div class="container bg-white">
   <div class="row">
-    <div class="col" id="footer">
-      <p>Copyright &copy; <%= Date.current.strftime("%Y") %> Blog App</p>
-    </div>
+    <footer class="s-footer">
+
+      <div class="row s-footer__top">
+        <div class="column">
+          <ul class="s-footer__social">
+            <li><a href="https://www.facebook.com/madhur.shrestha.984"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/killervikingss"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCOzTU7GFeymNZkuPW7yKrZA"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/MadhurShrestha"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/peakyblindersofficial/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aayushstha17/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div> <!-- end footer__top -->
+        <div class="row s-footer__bottom">
+
+            <div class="large-6 tab-full column s-footer__info">
+                <h3 class="h6">About this Blog</h3>
+                <p>
+                  This blog is made with Keep It Simple template. It is being updated to a working blog from the skillshare project by David Battersby.This project is being turned into a dynamic website slowly.
+                </p>
+                <p>
+                  There are different types of article in these blogs. These are created by different writers.If you want to support these writers. Donate to your local charities near you.
+                </p>
+            </div>
+
+            <div class="large-6 tab-full column">
+              <div class="row">
+                <div class="large-8 tab-full column">
+                  <h3 class="h6">Photostream</h3>
+                    <ul class="photostream group">
+                      <li><a href="#0"><img alt="thumbnail" src="thumb.jpg"></a></li>
+                      <li><a href="#0"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
+                      <li><a href="#0"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
+                      <li><a href="#0"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
+                      <li><a href="#0"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
+                      <li><a href="#0"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
+                      <li><a href="#0"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
+                      <li><a href="#0"><img alt="thumbnail" src="images/thumb.jpg"></a></li>
+                    </ul>
+                  </div>
+                  <div class="large-3 tab-full column">
+                    <h3  class="h6">Navigate</h3>
+                    <ul class="s-footer__list s-footer-list--nav group">
+                      <li><%= link_to "Home",root_path %></li>
+                      <li><%= link_to"About",about_path %></li>
+                      <li><%= link_to "Blog",blog_path %></li>
+                      <li><%= link_to "Contact",contact_path %></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+
+            <div class="ss-copyright">
+                <span>Copyright &copy; <%= Date.current.strftime("%Y") %> Blog App</span>
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+         <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
   </div>
 </div>
-
-
