@@ -1,0 +1,24 @@
+<% page_title "Home" %>
+
+<div class="row">
+  <div class="col-8">
+    <p class="h4">Latest Posts</p>
+
+      <% @posts.each do |post| %>
+        <%= render partial: "posts/post", locals: { post: post} %>
+      <% end %>
+  </div>
+  <div class="col-4">
+    <p class="h4">About</p>
+
+    <%= image_tag "blog.jpg", alt: "Blog Image",class: "img-fluid mt-2 mb-2", style: "border-radius: 6px: border: 1px solid #444"%>
+
+    <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.</p>
+
+    <p class="h4">Categories</p>
+    <% @categories.each do |category| %>
+      <p><%= category.title %> - <%= category.total_count %></p>
+    <% end %>
+  </div>
+</div>
+

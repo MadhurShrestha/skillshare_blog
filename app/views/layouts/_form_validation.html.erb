@@ -1,0 +1,9 @@
+  <% if local_assigns[:item] && item.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% item.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
